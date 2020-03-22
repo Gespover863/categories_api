@@ -11,7 +11,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": ""
+					"raw": "{{local_address}}/api/get_graph/1222",
+					"host": [
+						"{{local_address}}"
+					],
+					"path": [
+						"api",
+						"get_graph",
+						"1222"
+					]
 				}
 			},
 			"response": []
@@ -22,7 +30,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": ""
+					"raw": "{{local_address}}/api/get_tree/",
+					"host": [
+						"{{local_address}}"
+					],
+					"path": [
+						"api",
+						"get_tree",
+						""
+					]
 				}
 			},
 			"response": []
@@ -42,9 +58,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{local_adress}}/api/create_tree/",
+					"raw": "{{local_address}}/api/create_tree/",
 					"host": [
-						"{{local_adress}}"
+						"{{local_address}}"
 					],
 					"path": [
 						"api",
@@ -61,14 +77,14 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{local_adress}}/api/delete_tree/46",
+					"raw": "{{local_address}}/api/delete_tree/91",
 					"host": [
-						"{{local_adress}}"
+						"{{local_address}}"
 					],
 					"path": [
 						"api",
 						"delete_tree",
-						"46"
+						"91"
 					]
 				}
 			},
