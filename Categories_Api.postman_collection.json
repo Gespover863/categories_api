@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "8afd2dd1-fdd2-4c96-881d-42df9641a148",
+		"name": "Categories_Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET GRAPH",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET TREE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"name\": \"Category 1\",\n\"children\": [\n{\n\"name\": \"Category 1.1\",\n\"children\": [\n{\n\"name\": \"Category 1.1.1\",\n\"children\": [\n{\n\"name\": \"Category 1.1.1.1\"\n},\n{\n\"name\": \"Category 1.1.1.2\"\n},\n\n{\n\"name\": \"Category 1.1.1.3\"\n}\n]\n},\n{\n\"name\": \"Category 1.1.2\",\n\"children\": [\n{\n\"name\": \"Category 1.1.2.1\"\n},\n{\n\"name\": \"Category 1.1.2.2\"\n},\n{\n\"name\": \"Category 1.1.2.3\"\n}\n]\n}\n]\n},\n{\n\"name\": \"Category 1.2\",\n\"children\": [\n{\n\"name\": \"Category 1.2.1\"\n},\n{\n\"name\": \"Category 1.2.2\",\n\"children\": [\n{\n\"name\": \"Category 1.2.2.1\"\n},\n{\n\"name\": \"Category 1.2.2.2\"\n}\n]\n}\n]\n}\n]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{local_adress}}/api/create_tree/",
+					"host": [
+						"{{local_adress}}"
+					],
+					"path": [
+						"api",
+						"create_tree",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{local_adress}}/api/delete_tree/46",
+					"host": [
+						"{{local_adress}}"
+					],
+					"path": [
+						"api",
+						"delete_tree",
+						"46"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
